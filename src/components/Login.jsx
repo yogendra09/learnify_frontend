@@ -42,7 +42,8 @@ const Login = () => {
       // Handle form submission
       
       try {
-        await axios.post("/user/signin" , {email,password})
+       const {data} =  await axios.post("/user/signin" , {email,password});
+       localStorage.setItem("token", data.token);
         console.log('Form submitted');
         setLogin(true)
         navigate("/")
