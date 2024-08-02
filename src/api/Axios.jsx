@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const instance = axios.create({
-    baseURL: 'https://backend-gmmc.onrender.com/',
+    baseURL: 'https://learnify-backend-bmrz.onrender.com',
     withCredentials:true
 
 })
